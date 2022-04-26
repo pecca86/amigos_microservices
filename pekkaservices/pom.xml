@@ -8,9 +8,65 @@
     <artifactId>pekkaservices</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <name>pekkaservices</name>
+    <url></url>
+
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+
+        <!-- Handle the spring boot version in one place -->
+        <spring.boot.maven.plugin.version>2.6.6</spring.boot.maven.plugin.version>
+        <spring.boot.dependencies.version>2.6.6</spring.boot.dependencies.version>
     </properties>
+
+    <!-- In order to let the project pick any dependency it wants -->
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.dependencies.version}</version>
+                <scope>import</scope> <!-- This creates a virtual dependency, since spring boot is not parent dependency -->
+                <type>pom</type> <!-- needs to be specified in order to download missing dependencies -->
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- Makes all modules have the specified dependencies by default w/o having to explicitly import them in own pom.xml -->
+    <dependencies>
+
+        <!-- Lombok for creating shorter classes -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <!-- Test suite -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <!-- Makes all modules have the specified dependencies by default w/o having to explicitly import them in own pom.xml -->
+        <pluginManagement>
+            <!-- for building the artefacts -->
+            <plugins>
+
+                <plugin>
+                    <groupId>com.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring.boot.maven.plugin.version}</version>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+    </build>
 
 </project>
