@@ -2,6 +2,8 @@ package com.pekka.customer;
 
 import com.pekka.clients.fraud.FraudCheckResponse;
 import com.pekka.clients.fraud.FraudClient;
+import com.pekka.clients.notification.NotificationClient;
+import com.pekka.clients.notification.NotificationRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -9,7 +11,8 @@ import org.springframework.web.client.RestTemplate;
 public record CustomerService(
         CustomerRepository customerRepository,
         RestTemplate restTemplate,
-        FraudClient fraudClient
+        FraudClient fraudClient,
+        NotificationClient notificationClient
 ) {
 
     public void registerCustomer(CustomerRegistrationRequest request) {
@@ -28,6 +31,12 @@ public record CustomerService(
         if (fraudCheckResponse.isFraudster()) {
             throw new IllegalStateException("Fraudster");
         }
+
+        notificationClient.notifyCustomer(
+                new NotificationRequest(
+                    customer.getId(), customer.getEmail(), "Homo olet!"
+                )
+        );
 
     }
 }
