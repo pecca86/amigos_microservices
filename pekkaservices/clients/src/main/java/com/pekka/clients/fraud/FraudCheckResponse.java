@@ -1,5 +1,4 @@
-package com.pekka.customer;
+package com.pekka.clients.fraud;
 
 public record FraudCheckResponse(Boolean isFraudster) {
-
 }
