@@ -21,7 +21,8 @@ public record CustomerService(
         customerRepository.saveAndFlush(customer);
         // check if customer is possible fraudster using our fraud microservice
         FraudCheckResponse fraudCheckResponse = restTemplate.getForObject(
-                "http://localhost:8081/api/v1/fraud-check/{customerId}",
+                // Eureka server takes care of porting the request to the right address
+                "http://FRAUD/api/v1/fraud-check/{customerId}", // Before Eureka service server: "http://localhost:8081/api/v1/fraud-check/{customerId}"
                 FraudCheckResponse.class,
                 customer.getId()
         );

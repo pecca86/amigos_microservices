@@ -35,6 +35,11 @@
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope> <!-- indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases. -->
         </dependency>
+        <!-- Dependecy for registering to Eureka server -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
 
     </dependencies>
 
