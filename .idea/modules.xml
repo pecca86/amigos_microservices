@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/amigos_microservices.iml" filepath="$PROJECT_DIR$/.idea/amigos_microservices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pekkaservices/clients/clients.iml" filepath="$PROJECT_DIR$/pekkaservices/clients/clients.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pekkaservices/customer/customer.iml" filepath="$PROJECT_DIR$/pekkaservices/customer/customer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pekkaservices/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/pekkaservices/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pekkaservices/fraud/fraud.iml" filepath="$PROJECT_DIR$/pekkaservices/fraud/fraud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pekkaservices/notification/notification.iml" filepath="$PROJECT_DIR$/pekkaservices/notification/notification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pekkaservices/pekkaservices.iml" filepath="$PROJECT_DIR$/pekkaservices/pekkaservices.iml" />
+    </modules>
+  </component>
+</project>
