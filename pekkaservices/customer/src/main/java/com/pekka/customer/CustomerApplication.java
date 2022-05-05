@@ -6,7 +6,13 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 // Annotate so the class a recognized as a Spring boot main class
-@SpringBootApplication
+@SpringBootApplication(
+        // We do this so we can inject the rabbitMQ connection producer
+        scanBasePackages = {
+                "com.pekka.amqp",
+                "com.pekka.customer"
+        }
+)
 @EnableEurekaClient // Registers this bean as a Eureka client
 @EnableFeignClients(
         basePackages = "com.pekka.clients"

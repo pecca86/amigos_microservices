@@ -1,5 +1,6 @@
 package com.pekka.customer;
 
+import com.pekka.amqp.RabbitMQMessageProducer;
 import com.pekka.clients.fraud.FraudCheckResponse;
 import com.pekka.clients.fraud.FraudClient;
 import com.pekka.clients.notification.NotificationClient;
@@ -12,7 +13,8 @@ public record CustomerService(
         CustomerRepository customerRepository,
         RestTemplate restTemplate,
         FraudClient fraudClient,
-        NotificationClient notificationClient
+        NotificationClient notificationClient,
+        RabbitMQMessageProducer rabbitMQMessageProducer
 ) {
 
     public void registerCustomer(CustomerRegistrationRequest request) {
@@ -32,10 +34,22 @@ public record CustomerService(
             throw new IllegalStateException("Fraudster");
         }
 
-        notificationClient.notifyCustomer(
-                new NotificationRequest(
-                    customer.getId(), customer.getEmail(), "Homo olet!"
-                )
+        // This is not needed thanks to our RabbitMQ
+//        notificationClient.notifyCustomer(
+//                new NotificationRequest(
+//                    customer.getId(), customer.getEmail(), "Homo olet!"
+//                )
+//        );
+
+        NotificationRequest notificationRequest = new NotificationRequest(
+                customer.getId(),
+                customer.getEmail(),
+                "Homo olet!");
+
+        rabbitMQMessageProducer.publish(
+                notificationRequest,
+                "internal.exchange",
+                "internal.notification.routing-key"
         );
 
     }
