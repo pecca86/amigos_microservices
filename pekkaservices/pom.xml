@@ -16,6 +16,7 @@
         <module>clients</module>
         <module>notification</module>
         <module>apigateway</module>
+        <module>amqp</module>
     </modules>
 
     <name>pekkaservices</name>
@@ -77,6 +78,18 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
+        <!-- RABBIT MQ -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+        <!-- our Message Queue -->
+        <dependency>
+            <groupId>com.pekka.pekkaservices</groupId>
+            <artifactId>amqp</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
     </dependencies>
