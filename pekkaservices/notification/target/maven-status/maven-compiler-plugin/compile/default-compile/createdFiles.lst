@@ -1,0 +1,8 @@
+com/pekka/notification/NotificationController.class
+com/pekka/notification/Notification.class
+com/pekka/notification/NotificationRepository.class
+com/pekka/notification/NotificationApplication.class
+com/pekka/notification/NotificationService.class
+com/pekka/notification/Notification$NotificationBuilder.class
+com/pekka/notification/rabbitmq/NotificationConsumer.class
+com/pekka/notification/NotificationConfig.class

@@ -1,0 +1,6 @@
+com/pekka/fraud/FraudService.class
+com/pekka/fraud/FraudCheckHistory.class
+com/pekka/fraud/FraudApplication.class
+com/pekka/fraud/FraudCheckHistory$FraudCheckHistoryBuilder.class
+com/pekka/fraud/FraudController.class
+com/pekka/fraud/FraudRepository.class

@@ -1,0 +1,8 @@
+com/pekka/customer/CustomerConfig.class
+com/pekka/customer/CustomerRegistrationRequest.class
+com/pekka/customer/CustomerService.class
+com/pekka/customer/Customer$CustomerBuilder.class
+com/pekka/customer/CustomerRepository.class
+com/pekka/customer/Customer.class
+com/pekka/customer/CustomerController.class
+com/pekka/customer/CustomerApplication.class

@@ -10,13 +10,14 @@
         <module name="notification" />
         <module name="clients" />
         <module name="fraud" />
-        <module name="amqp" />
         <module name="eureka-server" />
         <module name="customer" />
+        <module name="amqp_real" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="advmsgqueue" target="17" />
+      <module name="amqp" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

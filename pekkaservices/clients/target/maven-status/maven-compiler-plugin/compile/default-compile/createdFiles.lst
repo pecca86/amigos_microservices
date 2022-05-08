@@ -1,0 +1,5 @@
+com/pekka/clients/fraud/FraudClient.class
+com/pekka/clients/notification/NotificationResponse.class
+com/pekka/clients/notification/NotificationRequest.class
+com/pekka/clients/notification/NotificationClient.class
+com/pekka/clients/fraud/FraudCheckResponse.class
