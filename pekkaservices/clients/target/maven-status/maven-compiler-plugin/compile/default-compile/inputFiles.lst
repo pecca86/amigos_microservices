@@ -1,5 +1,5 @@
-/Users/pekkaranta-aho/Desktop/DELETE_ME/amigos_microservices/pekkaservices/clients/src/main/java/com/pekka/clients/notification/NotificationRequest.java
-/Users/pekkaranta-aho/Desktop/DELETE_ME/amigos_microservices/pekkaservices/clients/src/main/java/com/pekka/clients/notification/NotificationResponse.java
-/Users/pekkaranta-aho/Desktop/DELETE_ME/amigos_microservices/pekkaservices/clients/src/main/java/com/pekka/clients/fraud/FraudClient.java
-/Users/pekkaranta-aho/Desktop/DELETE_ME/amigos_microservices/pekkaservices/clients/src/main/java/com/pekka/clients/notification/NotificationClient.java
-/Users/pekkaranta-aho/Desktop/DELETE_ME/amigos_microservices/pekkaservices/clients/src/main/java/com/pekka/clients/fraud/FraudCheckResponse.java
+/Users/pekkaranta-aho/Coding/Java/Amigoscode/microservices_own/amigos_microservices/pekkaservices/clients/src/main/java/com/pekka/clients/notification/NotificationClient.java
+/Users/pekkaranta-aho/Coding/Java/Amigoscode/microservices_own/amigos_microservices/pekkaservices/clients/src/main/java/com/pekka/clients/notification/NotificationResponse.java
+/Users/pekkaranta-aho/Coding/Java/Amigoscode/microservices_own/amigos_microservices/pekkaservices/clients/src/main/java/com/pekka/clients/fraud/FraudCheckResponse.java
+/Users/pekkaranta-aho/Coding/Java/Amigoscode/microservices_own/amigos_microservices/pekkaservices/clients/src/main/java/com/pekka/clients/notification/NotificationRequest.java
+/Users/pekkaranta-aho/Coding/Java/Amigoscode/microservices_own/amigos_microservices/pekkaservices/clients/src/main/java/com/pekka/clients/fraud/FraudClient.java

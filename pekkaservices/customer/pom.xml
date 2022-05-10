@@ -28,6 +28,29 @@
             </plugin>
         </plugins>
     </build>
+    <!-- For Dockerizing -->
+    <profiles>
+        <profile>
+            <id>build-docker-image</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.google.cloud.tools</groupId>
+                        <artifactId>jib-maven-plugin</artifactId>
+                        <!-- Specify what happens after packaging to a docker image -->
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>build</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
     <!-- This module's own dependencies -->
     <dependencies>
@@ -43,13 +66,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-        <!-- PostgreSQL driver -->
+        <!-- PostgresSQL driver -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope> <!-- indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases. -->
         </dependency>
-        <!-- Dependecy for registering to Eureka server -->
+        <!-- Dependency for registering to Eureka server -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>

@@ -1,7 +1,7 @@
-/Users/pekkaranta-aho/Desktop/DELETE_ME/amigos_microservices/pekkaservices/customer/src/main/java/com/pekka/customer/CustomerApplication.java
-/Users/pekkaranta-aho/Desktop/DELETE_ME/amigos_microservices/pekkaservices/customer/src/main/java/com/pekka/customer/CustomerController.java
-/Users/pekkaranta-aho/Desktop/DELETE_ME/amigos_microservices/pekkaservices/customer/src/main/java/com/pekka/customer/CustomerRegistrationRequest.java
-/Users/pekkaranta-aho/Desktop/DELETE_ME/amigos_microservices/pekkaservices/customer/src/main/java/com/pekka/customer/CustomerRepository.java
-/Users/pekkaranta-aho/Desktop/DELETE_ME/amigos_microservices/pekkaservices/customer/src/main/java/com/pekka/customer/Customer.java
-/Users/pekkaranta-aho/Desktop/DELETE_ME/amigos_microservices/pekkaservices/customer/src/main/java/com/pekka/customer/CustomerConfig.java
-/Users/pekkaranta-aho/Desktop/DELETE_ME/amigos_microservices/pekkaservices/customer/src/main/java/com/pekka/customer/CustomerService.java
+/Users/pekkaranta-aho/Coding/Java/Amigoscode/microservices_own/amigos_microservices/pekkaservices/customer/src/main/java/com/pekka/customer/CustomerService.java
+/Users/pekkaranta-aho/Coding/Java/Amigoscode/microservices_own/amigos_microservices/pekkaservices/customer/src/main/java/com/pekka/customer/CustomerConfig.java
+/Users/pekkaranta-aho/Coding/Java/Amigoscode/microservices_own/amigos_microservices/pekkaservices/customer/src/main/java/com/pekka/customer/Customer.java
+/Users/pekkaranta-aho/Coding/Java/Amigoscode/microservices_own/amigos_microservices/pekkaservices/customer/src/main/java/com/pekka/customer/CustomerApplication.java
+/Users/pekkaranta-aho/Coding/Java/Amigoscode/microservices_own/amigos_microservices/pekkaservices/customer/src/main/java/com/pekka/customer/CustomerController.java
+/Users/pekkaranta-aho/Coding/Java/Amigoscode/microservices_own/amigos_microservices/pekkaservices/customer/src/main/java/com/pekka/customer/CustomerRegistrationRequest.java
+/Users/pekkaranta-aho/Coding/Java/Amigoscode/microservices_own/amigos_microservices/pekkaservices/customer/src/main/java/com/pekka/customer/CustomerRepository.java

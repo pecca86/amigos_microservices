@@ -32,6 +32,8 @@
         <spring.boot.dependencies.version>2.6.6</spring.boot.dependencies.version>
         <!-- Spring cloud version -->
         <spring.cloud-version>2021.0.1</spring.cloud-version>
+        <!-- For Jib containerizing -->
+        <image>pecca86/${project.artifactId}:${project.version}</image>
     </properties>
 
     <!-- In order to let the project pick any dependency it wants -->
@@ -108,6 +110,36 @@
                         </execution>
                     </executions>
                 </plugin>
+                <!-- Plugin for automating Docker container build, we put it here so that every model doesn't get it -->
+                <plugin>
+                    <groupId>com.google.cloud.tools</groupId>
+                    <artifactId>jib-maven-plugin</artifactId>
+                    <version>3.1.4</version>
+                    <!-- Specify default config for all microservices -->
+                    <configuration>
+                        <from>
+                            <!-- removed: @sha256:2b47a8ea946ce1e5365a1562414ed576e378b7b670cadff3fb98ebecf2890cdc -->
+                            <image>eclipse-temurin:17</image>
+                            <platforms>
+                                <platform>
+                                    <architecture>arm64</architecture>
+                                    <os>linux</os>
+                                </platform>
+                                <platform>
+                                    <architecture>amd64</architecture>
+                                    <os>linux</os>
+                                </platform>
+                            </platforms>
+                        </from>
+                        <!-- Specifies what sort of docker image we want to build -->
+                        <to>
+                            <tags>
+                                <tag>latest</tag>
+                            </tags>
+                        </to>
+                    </configuration>
+                </plugin>
+
 
             </plugins>
         </pluginManagement>

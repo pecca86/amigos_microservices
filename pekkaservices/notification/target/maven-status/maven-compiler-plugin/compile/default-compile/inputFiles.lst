@@ -1,7 +1,7 @@
-/Users/pekkaranta-aho/Desktop/DELETE_ME/amigos_microservices/pekkaservices/notification/src/main/java/com/pekka/notification/NotificationApplication.java
-/Users/pekkaranta-aho/Desktop/DELETE_ME/amigos_microservices/pekkaservices/notification/src/main/java/com/pekka/notification/NotificationConfig.java
-/Users/pekkaranta-aho/Desktop/DELETE_ME/amigos_microservices/pekkaservices/notification/src/main/java/com/pekka/notification/NotificationService.java
-/Users/pekkaranta-aho/Desktop/DELETE_ME/amigos_microservices/pekkaservices/notification/src/main/java/com/pekka/notification/NotificationRepository.java
-/Users/pekkaranta-aho/Desktop/DELETE_ME/amigos_microservices/pekkaservices/notification/src/main/java/com/pekka/notification/rabbitmq/NotificationConsumer.java
-/Users/pekkaranta-aho/Desktop/DELETE_ME/amigos_microservices/pekkaservices/notification/src/main/java/com/pekka/notification/NotificationController.java
-/Users/pekkaranta-aho/Desktop/DELETE_ME/amigos_microservices/pekkaservices/notification/src/main/java/com/pekka/notification/Notification.java
+/Users/pekkaranta-aho/Coding/Java/Amigoscode/microservices_own/amigos_microservices/pekkaservices/notification/src/main/java/com/pekka/notification/Notification.java
+/Users/pekkaranta-aho/Coding/Java/Amigoscode/microservices_own/amigos_microservices/pekkaservices/notification/src/main/java/com/pekka/notification/NotificationApplication.java
+/Users/pekkaranta-aho/Coding/Java/Amigoscode/microservices_own/amigos_microservices/pekkaservices/notification/src/main/java/com/pekka/notification/NotificationRepository.java
+/Users/pekkaranta-aho/Coding/Java/Amigoscode/microservices_own/amigos_microservices/pekkaservices/notification/src/main/java/com/pekka/notification/NotificationService.java
+/Users/pekkaranta-aho/Coding/Java/Amigoscode/microservices_own/amigos_microservices/pekkaservices/notification/src/main/java/com/pekka/notification/rabbitmq/NotificationConsumer.java
+/Users/pekkaranta-aho/Coding/Java/Amigoscode/microservices_own/amigos_microservices/pekkaservices/notification/src/main/java/com/pekka/notification/NotificationController.java
+/Users/pekkaranta-aho/Coding/Java/Amigoscode/microservices_own/amigos_microservices/pekkaservices/notification/src/main/java/com/pekka/notification/NotificationConfig.java
