@@ -17,7 +17,11 @@ import org.springframework.web.bind.annotation.PathVariable;
  */
 
 // This can also contain just "fraud"
-@FeignClient("FRAUD")
+//@FeignClient("FRAUD") // This is for when using Eureka as service discovery
+@FeignClient(
+        name = "fraud",
+        url = "${clients.fraud.url}"
+)
 public interface FraudClient {
     // Inside here we put the desired mappings
 

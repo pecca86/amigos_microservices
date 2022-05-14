@@ -48,31 +48,32 @@ services:
     networks:
       - spring
   # Docker container configs
-  eureka-server:
-    image: pecca86/eureka-server:latest
-    container_name: eureka-server
-    ports:
-      - "8761:8761"
-    # specify which environment to use configs
-    environment:
-      - SPRING_PROFILES_ACTIVE=docker
-    networks:
-      - spring
-    depends_on:
-      - zipkin
-  apigateway:
-    image: pecca86/apigateway:latest
-    container_name: apigateway
-    ports:
-      - "8083:8083"
-    # specify which environment to use configs
-    environment:
-      - SPRING_PROFILES_ACTIVE=docker
-    networks:
-      - spring
-    depends_on:
-      - zipkin
-      - eureka-server
+# DISABLED, SINCE SERVICE DISCOVERY GOES THROUGH KUBERNETES
+#  eureka-server:
+#    image: pecca86/eureka-server:latest
+#    container_name: eureka-server
+#    ports:
+#      - "8761:8761"
+#    # specify which environment to use configs
+#    environment:
+#      - SPRING_PROFILES_ACTIVE=docker
+#    networks:
+#      - spring
+#    depends_on:
+#      - zipkin
+#  apigateway:
+#    image: pecca86/apigateway:latest
+#    container_name: apigateway
+#    ports:
+#      - "8083:8083"
+#    # specify which environment to use configs
+#    environment:
+#      - SPRING_PROFILES_ACTIVE=docker
+#    networks:
+#      - spring
+#    depends_on:
+#      - zipkin
+#      - eureka-server
   customer:
     image: pecca86/customer:latest
     container_name: customer
@@ -85,7 +86,7 @@ services:
       - postgres
     depends_on:
       - zipkin
-      - eureka-server
+      #- eureka-server
       - postgres
       - rabbitmq
   fraud:
@@ -100,7 +101,7 @@ services:
       - postgres
     depends_on:
       - zipkin
-      - eureka-server
+      #- eureka-server
       - postgres
       - rabbitmq
   notification:
@@ -115,7 +116,7 @@ services:
       - postgres
     depends_on:
       - zipkin
-      - eureka-server
+      #- eureka-server
       - postgres
       - rabbitmq
 networks:

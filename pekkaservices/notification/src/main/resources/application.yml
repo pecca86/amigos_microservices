@@ -6,8 +6,8 @@ spring:
     name: notification
   datasource:
     url: jdbc:postgresql://localhost:5432/notification
-    username:
-    password:
+    username: pekka
+    password: password
   jpa:
     hibernate:
       ddl-auto: create-drop
@@ -27,6 +27,7 @@ eureka:
       defaultZone: http://localhost:8761/eureka
     fetch-registry: true
     register-with-eureka: true
+    enabled: false #Turning off Eureka server, since kubernetes offers service discovery for free
 
 # Properties for our message queue
 rabbitmq:
