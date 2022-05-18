@@ -10,7 +10,7 @@ spring:
     password: password
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create-drop # in production change! update to persist data
     show-sql: true
     properties:
       hibernate:
